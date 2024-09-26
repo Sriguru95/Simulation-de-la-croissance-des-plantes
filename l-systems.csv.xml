@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<LSystems>
+<LSys id="Lsys1">
+<Name>snow</Name>
+<Symbols id="Symbols1">
+<Symbol id="Symbol1">A</Symbol>
+<Symbol id="Symbol2">P</Symbol>
+<Symbol id="Symbol3">M</Symbol>
+</Symbols>
+<Axiom>APPAPPA</Axiom>
+<Substitutions id="Subst1">
+<Substitution>
+<SymbolRef idref="Symbol1"/>
+<Image>AMAPPAMA</Image>
+</Substitution><Substitution>
+<SymbolRef idref="Symbol2"/>
+<Image>P</Image>
+</Substitution><Substitution>
+<SymbolRef idref="Symbol3"/>
+<Image>M</Image>
+</Substitution></Substitutions>
+<Interpretations id="Interp1">
+<Interpretation>
+<SymbolRef idref="Symbol1"/>
+<Instruction>LINE 30</Instruction>
+</Interpretation><Interpretation>
+<SymbolRef idref="Symbol2"/>
+<Instruction>TURN 60</Instruction>
+</Interpretation><Interpretation>
+<SymbolRef idref="Symbol3"/>
+<Instruction>TURN -60</Instruction>
+</Interpretation></Interpretations>
+</LSys>
+<LSys id="Lsys2">
+<Name>koch</Name>
+<Symbols id="Symbols2">
+<Symbol id="Symbol4">A</Symbol>
+<Symbol id="Symbol5">P</Symbol>
+<Symbol id="Symbol6">M</Symbol>
+</Symbols>
+<Axiom>APAPAPA</Axiom>
+<Substitutions id="Subst2">
+<Substitution>
+<SymbolRef idref="Symbol4"/>
+<Image>AMAAPAAPAPAMAMAAPAPAMAMAAMAAPA</Image>
+</Substitution><Substitution>
+<SymbolRef idref="Symbol5"/>
+<Image>P</Image>
+</Substitution><Substitution>
+<SymbolRef idref="Symbol6"/>
+<Image>M</Image>
+</Substitution></Substitutions>
+<Interpretations id="Interp2">
+<Interpretation>
+<SymbolRef idref="Symbol4"/>
+<Instruction>LINE 10</Instruction>
+</Interpretation><Interpretation>
+<SymbolRef idref="Symbol5"/>
+<Instruction>TURN 90</Instruction>
+</Interpretation><Interpretation>
+<SymbolRef idref="Symbol6"/>
+<Instruction>TURN -90</Instruction>
+</Interpretation></Interpretations>
+</LSys>
+<LSys id="Lsys3">
+<Name>koch1</Name>
+<Symbols id="Symbols3">
+<Symbol id="Symbol7">A</Symbol>
+<Symbol id="Symbol8">B</Symbol>
+<Symbol id="Symbol9">P</Symbol>
+<Symbol id="Symbol10">M</Symbol>
+</Symbols>
+<Axiom>APAPAPA</Axiom>
+<Substitutions id="Subst3">
+<Substitution>
+<SymbolRef idref="Symbol7"/>
+<Image>APBMAAPAPAAPABPAAMBPAAMAMAAMABMAAA</Image>
+</Substitution><Substitution>
+<SymbolRef idref="Symbol8"/>
+<Image>BBBBBB</Image>
+</Substitution><Substitution>
+<SymbolRef idref="Symbol9"/>
+<Image>P</Image>
+</Substitution><Substitution>
+<SymbolRef idref="Symbol10"/>
+<Image>M</Image>
+</Substitution></Substitutions>
+<Interpretations id="Interp3">
+<Interpretation>
+<SymbolRef idref="Symbol7"/>
+<Instruction>LINE 10</Instruction>
+</Interpretation><Interpretation>
+<SymbolRef idref="Symbol8"/>
+<Instruction>MOVE 10</Instruction>
+</Interpretation><Interpretation>
+<SymbolRef idref="Symbol9"/>
+<Instruction>TURN 90</Instruction>
+</Interpretation><Interpretation>
+<SymbolRef idref="Symbol10"/>
+<Instruction>TURN -90</Instruction>
+</Interpretation></Interpretations>
+</LSys>
+<LSys id="Lsys4">
+<Name>koch2</Name>
+<Symbols id="Symbols4">
+<Symbol id="Symbol11">A</Symbol>
+<Symbol id="Symbol12">P</Symbol>
+<Symbol id="Symbol13">M</Symbol>
+</Symbols>
+<Axiom>APAPAPA</Axiom>
+<Substitutions id="Subst4">
+<Substitution>
+<SymbolRef idref="Symbol11"/>
+<Image>AAPAPAPAPAPAMA</Image>
+</Substitution><Substitution>
+<SymbolRef idref="Symbol12"/>
+<Image>P</Image>
+</Substitution><Substitution>
+<SymbolRef idref="Symbol13"/>
+<Image>M</Image>
+</Substitution></Substitutions>
+<Interpretations id="Interp4">
+<Interpretation>
+<SymbolRef idref="Symbol11"/>
+<Instruction>LINE 10</Instruction>
+</Interpretation><Interpretation>
+<SymbolRef idref="Symbol12"/>
+<Instruction>TURN 90</Instruction>
+</Interpretation><Interpretation>
+<SymbolRef idref="Symbol13"/>
+<Instruction>TURN -90</Instruction>
+</Interpretation></Interpretations>
+</LSys>
+<LSys id="Lsys5">
+<Name>koch3</Name>
+<Symbols id="Symbols5">
+<Symbol id="Symbol14">A</Symbol>
+<Symbol id="Symbol15">P</Symbol>
+</Symbols>
+<Axiom>APAPAPA</Axiom>
+<Substitutions id="Subst5">
+<Substitution>
+<SymbolRef idref="Symbol14"/>
+<Image>AAPAPAPAPAA</Image>
+</Substitution><Substitution>
+<SymbolRef idref="Symbol15"/>
+<Image>P</Image>
+</Substitution></Substitutions>
+<Interpretations id="Interp5">
+<Interpretation>
+<SymbolRef idref="Symbol14"/>
+<Instruction>LINE 10</Instruction>
+</Interpretation><Interpretation>
+<SymbolRef idref="Symbol15"/>
+<Instruction>TURN 90</Instruction>
+</Interpretation></Interpretations>
+</LSys>
+<LSys id="Lsys6">
+<Name>koch4</Name>
+<Symbols id="Symbols6">
+<Symbol id="Symbol16">A</Symbol>
+<Symbol id="Symbol17">P</Symbol>
+<Symbol id="Symbol18">M</Symbol>
+</Symbols>
+<Axiom>APAPAPA</Axiom>
+<Substitutions id="Subst6">
+<Substitution>
+<SymbolRef idref="Symbol16"/>
+<Image>AAPAMAPAPAA</Image>
+</Substitution><Substitution>
+<SymbolRef idref="Symbol17"/>
+<Image>P</Image>
+</Substitution><Substitution>
+<SymbolRef idref="Symbol18"/>
+<Image>M</Image>
+</Substitution></Substitutions>
+<Interpretations id="Interp6">
+<Interpretation>
+<SymbolRef idref="Symbol16"/>
+<Instruction>LINE 10</Instruction>
+</Interpretation><Interpretation>
+<SymbolRef idref="Symbol17"/>
+<Instruction>TURN 90</Instruction>
+</Interpretation><Interpretation>
+<SymbolRef idref="Symbol18"/>
+<Instruction>TURN -90</Instruction>
+</Interpretation></Interpretations>
+</LSys>
+<LSys id="Lsys7">
+<Name>koch5</Name>
+<Symbols id="Symbols7">
+<Symbol id="Symbol19">A</Symbol>
+<Symbol id="Symbol20">P</Symbol>
+<Symbol id="Symbol21">M</Symbol>
+</Symbols>
+<Axiom>APAPAPA</Axiom>
+<Substitutions id="Subst7">
+<Substitution>
+<SymbolRef idref="Symbol19"/>
+<Image>AAPAPPAPA</Image>
+</Substitution><Substitution>
+<SymbolRef idref="Symbol20"/>
+<Image>P</Image>
+</Substitution><Substitution>
+<SymbolRef idref="Symbol21"/>
+<Image>M</Image>
+</Substitution></Substitutions>
+<Interpretations id="Interp7">
+<Interpretation>
+<SymbolRef idref="Symbol19"/>
+<Instruction>LINE 10</Instruction>
+</Interpretation><Interpretation>
+<SymbolRef idref="Symbol20"/>
+<Instruction>TURN 90</Instruction>
+</Interpretation><Interpretation>
+<SymbolRef idref="Symbol21"/>
+<Instruction>TURN -90</Instruction>
+</Interpretation></Interpretations>
+</LSys>
+<LSys id="Lsys8">
+<Name>dragon</Name>
+<Symbols id="Symbols8">
+<Symbol id="Symbol22">A</Symbol>
+<Symbol id="Symbol23">B</Symbol>
+<Symbol id="Symbol24">P</Symbol>
+<Symbol id="Symbol25">M</Symbol>
+</Symbols>
+<Axiom>A</Axiom>
+<Substitutions id="Subst8">
+<Substitution>
+<SymbolRef idref="Symbol22"/>
+<Image>APBP</Image>
+</Substitution><Substitution>
+<SymbolRef idref="Symbol23"/>
+<Image>MAMB</Image>
+</Substitution><Substitution>
+<SymbolRef idref="Symbol24"/>
+<Image>P</Image>
+</Substitution><Substitution>
+<SymbolRef idref="Symbol25"/>
+<Image>M</Image>
+</Substitution></Substitutions>
+<Interpretations id="Interp8">
+<Interpretation>
+<SymbolRef idref="Symbol22"/>
+<Instruction>LINE 10</Instruction>
+</Interpretation><Interpretation>
+<SymbolRef idref="Symbol23"/>
+<Instruction>LINE 10</Instruction>
+</Interpretation><Interpretation>
+<SymbolRef idref="Symbol24"/>
+<Instruction>TURN 90</Instruction>
+</Interpretation><Interpretation>
+<SymbolRef idref="Symbol25"/>
+<Instruction>TURN -90</Instruction>
+</Interpretation></Interpretations>
+</LSys>
+<LSys id="Lsys9">
+<Name>sierp</Name>
+<Symbols id="Symbols9">
+<Symbol id="Symbol26">A</Symbol>
+<Symbol id="Symbol27">B</Symbol>
+<Symbol id="Symbol28">P</Symbol>
+<Symbol id="Symbol29">M</Symbol>
+</Symbols>
+<Axiom>B</Axiom>
+<Substitutions id="Subst9">
+<Substitution>
+<SymbolRef idref="Symbol26"/>
+<Image>BPAPB</Image>
+</Substitution><Substitution>
+<SymbolRef idref="Symbol27"/>
+<Image>AMBMA</Image>
+</Substitution><Substitution>
+<SymbolRef idref="Symbol28"/>
+<Image>P</Image>
+</Substitution><Substitution>
+<SymbolRef idref="Symbol29"/>
+<Image>M</Image>
+</Substitution></Substitutions>
+<Interpretations id="Interp9">
+<Interpretation>
+<SymbolRef idref="Symbol26"/>
+<Instruction>LINE 6</Instruction>
+</Interpretation><Interpretation>
+<SymbolRef idref="Symbol27"/>
+<Instruction>LINE 6</Instruction>
+</Interpretation><Interpretation>
+<SymbolRef idref="Symbol28"/>
+<Instruction>TURN 60</Instruction>
+</Interpretation><Interpretation>
+<SymbolRef idref="Symbol29"/>
+<Instruction>TURN -60</Instruction>
+</Interpretation></Interpretations>
+</LSys>
+<LSys id="Lsys10">
+<Name>gosp6</Name>
+<Symbols id="Symbols10">
+<Symbol id="Symbol30">A</Symbol>
+<Symbol id="Symbol31">B</Symbol>
+<Symbol id="Symbol32">P</Symbol>
+<Symbol id="Symbol33">M</Symbol>
+</Symbols>
+<Axiom>A</Axiom>
+<Substitutions id="Subst10">
+<Substitution>
+<SymbolRef idref="Symbol30"/>
+<Image>APBPPBMAMMAAMBP</Image>
+</Substitution><Substitution>
+<SymbolRef idref="Symbol31"/>
+<Image>MAPBBPPBPAMMAMB</Image>
+</Substitution><Substitution>
+<SymbolRef idref="Symbol32"/>
+<Image>P</Image>
+</Substitution><Substitution>
+<SymbolRef idref="Symbol33"/>
+<Image>M</Image>
+</Substitution></Substitutions>
+<Interpretations id="Interp10">
+<Interpretation>
+<SymbolRef idref="Symbol30"/>
+<Instruction>LINE 4</Instruction>
+</Interpretation><Interpretation>
+<SymbolRef idref="Symbol31"/>
+<Instruction>LINE 4</Instruction>
+</Interpretation><Interpretation>
+<SymbolRef idref="Symbol32"/>
+<Instruction>TURN 60</Instruction>
+</Interpretation><Interpretation>
+<SymbolRef idref="Symbol33"/>
+<Instruction>TURN -60</Instruction>
+</Interpretation></Interpretations>
+</LSys>
+<LSys id="Lsys11">
+<Name>gosp4</Name>
+<Symbols id="Symbols11">
+<Symbol id="Symbol34">A</Symbol>
+<Symbol id="Symbol35">B</Symbol>
+<Symbol id="Symbol36">P</Symbol>
+<Symbol id="Symbol37">M</Symbol>
+</Symbols>
+<Axiom>MB</Axiom>
+<Substitutions id="Subst11">
+<Substitution>
+<SymbolRef idref="Symbol34"/>
+<Image>AAMBMBPAPAMBMBAPBPAABMAPBPAAPBMABMBMAPAPBBM</Image>
+</Substitution><Substitution>
+<SymbolRef idref="Symbol35"/>
+<Image>PAAMBMBPAPABPAMBBMAMBPABBMAMBAPAPBMBMAPAPBB</Image>
+</Substitution><Substitution>
+<SymbolRef idref="Symbol36"/>
+<Image>P</Image>
+</Substitution><Substitution>
+<SymbolRef idref="Symbol37"/>
+<Image>M</Image>
+</Substitution></Substitutions>
+<Interpretations id="Interp11">
+<Interpretation>
+<SymbolRef idref="Symbol34"/>
+<Instruction>LINE 2</Instruction>
+</Interpretation><Interpretation>
+<SymbolRef idref="Symbol35"/>
+<Instruction>LINE 2</Instruction>
+</Interpretation><Interpretation>
+<SymbolRef idref="Symbol36"/>
+<Instruction>TURN 90</Instruction>
+</Interpretation><Interpretation>
+<SymbolRef idref="Symbol37"/>
+<Instruction>TURN -90</Instruction>
+</Interpretation></Interpretations>
+</LSys>
+<LSys id="Lsys12">
+<Name>br1</Name>
+<Symbols id="Symbols12">
+<Symbol id="Symbol38">A</Symbol>
+<Symbol id="Symbol39">P</Symbol>
+<Symbol id="Symbol40">M</Symbol>
+</Symbols>
+<Axiom>A</Axiom>
+<Substitutions id="Subst12">
+<Substitution>
+<SymbolRef idref="Symbol38"/>
+<Image>A[PA]A[MA]A</Image>
+</Substitution><Substitution>
+<SymbolRef idref="Symbol39"/>
+<Image>P</Image>
+</Substitution><Substitution>
+<SymbolRef idref="Symbol40"/>
+<Image>M</Image>
+</Substitution></Substitutions>
+<Interpretations id="Interp12">
+<Interpretation>
+<SymbolRef idref="Symbol38"/>
+<Instruction>LINE 5</Instruction>
+</Interpretation><Interpretation>
+<SymbolRef idref="Symbol39"/>
+<Instruction>TURN 25</Instruction>
+</Interpretation><Interpretation>
+<SymbolRef idref="Symbol40"/>
+<Instruction>TURN -25</Instruction>
+</Interpretation></Interpretations>
+</LSys>
+<LSys id="Lsys13">
+<Name>br2</Name>
+<Symbols id="Symbols13">
+<Symbol id="Symbol41">A</Symbol>
+<Symbol id="Symbol42">P</Symbol>
+<Symbol id="Symbol43">M</Symbol>
+</Symbols>
+<Axiom>A</Axiom>
+<Substitutions id="Subst13">
+<Substitution>
+<SymbolRef idref="Symbol41"/>
+<Image>A[PA]A[MA][A]</Image>
+</Substitution><Substitution>
+<SymbolRef idref="Symbol42"/>
+<Image>P</Image>
+</Substitution><Substitution>
+<SymbolRef idref="Symbol43"/>
+<Image>M</Image>
+</Substitution></Substitutions>
+<Interpretations id="Interp13">
+<Interpretation>
+<SymbolRef idref="Symbol41"/>
+<Instruction>LINE 5</Instruction>
+</Interpretation><Interpretation>
+<SymbolRef idref="Symbol42"/>
+<Instruction>TURN 20</Instruction>
+</Interpretation><Interpretation>
+<SymbolRef idref="Symbol43"/>
+<Instruction>TURN -20</Instruction>
+</Interpretation></Interpretations>
+</LSys>
+<LSys id="Lsys14">
+<Name>br3</Name>
+<Symbols id="Symbols14">
+<Symbol id="Symbol44">A</Symbol>
+<Symbol id="Symbol45">B</Symbol>
+<Symbol id="Symbol46">P</Symbol>
+<Symbol id="Symbol47">M</Symbol>
+</Symbols>
+<Axiom>A</Axiom>
+<Substitutions id="Subst14">
+<Substitution>
+<SymbolRef idref="Symbol44"/>
+<Image>B[PA][MA]BA</Image>
+</Substitution><Substitution>
+<SymbolRef idref="Symbol45"/>
+<Image>BB</Image>
+</Substitution><Substitution>
+<SymbolRef idref="Symbol46"/>
+<Image>P</Image>
+</Substitution><Substitution>
+<SymbolRef idref="Symbol47"/>
+<Image>M</Image>
+</Substitution></Substitutions>
+<Interpretations id="Interp14">
+<Interpretation>
+<SymbolRef idref="Symbol44"/>
+<Instruction>LINE 5</Instruction>
+</Interpretation><Interpretation>
+<SymbolRef idref="Symbol45"/>
+<Instruction>LINE 5</Instruction>
+</Interpretation><Interpretation>
+<SymbolRef idref="Symbol46"/>
+<Instruction>TURN 25</Instruction>
+</Interpretation><Interpretation>
+<SymbolRef idref="Symbol47"/>
+<Instruction>TURN -25</Instruction>
+</Interpretation></Interpretations>
+</LSys>
+<LSys id="Lsys15">
+<Name>htree</Name>
+<Symbols id="Symbols15">
+<Symbol id="Symbol48">A</Symbol>
+<Symbol id="Symbol49">B</Symbol>
+<Symbol id="Symbol50">C</Symbol>
+<Symbol id="Symbol51">P</Symbol>
+<Symbol id="Symbol52">M</Symbol>
+</Symbols>
+<Axiom>A</Axiom>
+<Substitutions id="Subst15">
+<Substitution>
+<SymbolRef idref="Symbol48"/>
+<Image>B[PA]MA</Image>
+</Substitution><Substitution>
+<SymbolRef idref="Symbol49"/>
+<Image>CC</Image>
+</Substitution><Substitution>
+<SymbolRef idref="Symbol50"/>
+<Image>B</Image>
+</Substitution><Substitution>
+<SymbolRef idref="Symbol51"/>
+<Image>P</Image>
+</Substitution><Substitution>
+<SymbolRef idref="Symbol52"/>
+<Image>M</Image>
+</Substitution></Substitutions>
+<Interpretations id="Interp15">
+<Interpretation>
+<SymbolRef idref="Symbol48"/>
+<Instruction>LINE 10</Instruction>
+</Interpretation><Interpretation>
+<SymbolRef idref="Symbol49"/>
+<Instruction>LINE 14</Instruction>
+</Interpretation><Interpretation>
+<SymbolRef idref="Symbol50"/>
+<Instruction>LINE 10</Instruction>
+</Interpretation><Interpretation>
+<SymbolRef idref="Symbol51"/>
+<Instruction>TURN 90</Instruction>
+</Interpretation><Interpretation>
+<SymbolRef idref="Symbol52"/>
+<Instruction>TURN -90</Instruction>
+</Interpretation></Interpretations>
+</LSys>
+</LSystems>

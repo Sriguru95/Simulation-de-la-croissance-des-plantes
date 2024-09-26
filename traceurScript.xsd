@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:math="http://www.w3.org/2005/xpath-functions/math" elementFormDefault="qualified">
+
+  <!-- Define the TraceurScript root element -->
+  <xs:element name="TraceurScript">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <!-- Define the LINETO element -->
+        <xs:element name="LINETO">
+          <xs:complexType>
+            <xs:attribute name="x" type="xs:decimal" use="required"/>
+            <xs:attribute name="y" type="xs:decimal" use="required"/>
+          </xs:complexType>
+        </xs:element>
+        <!-- Define the MOVETO element -->
+        <xs:element name="MOVETO">
+          <xs:complexType>
+            <xs:attribute name="x" type="xs:decimal" use="required"/>
+            <xs:attribute name="y" type="xs:decimal" use="required"/>
+          </xs:complexType>
+        </xs:element>
+        <!-- Define the STORE element -->
+        <xs:element name="STORE" />
+        <!-- Define the RESTORE element -->
+        <xs:element name="RESTORE" />
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  
+</xs:schema>

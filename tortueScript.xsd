@@ -1,0 +1,109 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+    <!-- Schéma XML pour tortueScript.xml -->
+    <xsd:annotation>
+        <xsd:documentation xml:lang="fr">
+        Schéma XML pour tortueScript.xml et LSystems.xml
+        </xsd:documentation>
+    </xsd:annotation>
+
+    <!-- Define a named simple type for Type -->
+    <xsd:simpleType name="Type">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="TURN"/>
+            <xsd:enumeration value="MOVE"/>
+            <xsd:enumeration value="LINE"/>
+            <xsd:enumeration value="STORE"/>
+            <xsd:enumeration value="RESTORE"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:element name="TortueScript">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="Instructions" type="InstructionList"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    
+    <xsd:complexType name="InstructionList">
+        <xsd:sequence>
+            <xsd:element name="Instruction" type="Instruction" maxOccurs="unbounded"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    
+    <xsd:complexType name="Instruction">
+        <xsd:sequence>
+            <xsd:element name="Type" type="Type" minOccurs="1" maxOccurs="1"/>
+            <xsd:element name="Value" type="xsd:int" minOccurs="0" maxOccurs="1" />
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:element name="LSystems">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="LSys" type="LSysType" maxOccurs="unbounded"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    
+    <xsd:complexType name="LSysType">
+        <xsd:sequence>
+            <xsd:element name="Name" type="xsd:string"/>
+            <xsd:element name="Symbols" type="SymbolsType"/>
+            <xsd:element name="Axiom" type="xsd:string"/>
+            <xsd:element name="Substitutions" type="SubstitutionsType"/>
+            <xsd:element name="Interpretations" type="InterpretationsType"/>
+        </xsd:sequence>
+        <xsd:attribute name="id" type="xsd:string" use="required"/>
+    </xsd:complexType>
+    
+    <xsd:complexType name="SymbolsType">
+        <xsd:sequence>
+            <xsd:element name="Symbol" type="SymbolType" maxOccurs="unbounded"/>
+        </xsd:sequence>
+        <xsd:attribute name="id" type="xsd:string" use="required"/>
+    </xsd:complexType>
+    
+    <xsd:complexType name="SymbolType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute name="id" type="xsd:string" use="required"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    
+    <xsd:complexType name="SubstitutionsType">
+        <xsd:sequence>
+            <xsd:element name="Substitution" type="SubstitutionType" maxOccurs="unbounded"/>
+        </xsd:sequence>
+        <xsd:attribute name="id" type="xsd:string" use="required"/>
+    </xsd:complexType>
+    
+    <xsd:complexType name="SubstitutionType">
+        <xsd:sequence>
+            <xsd:element name="SymbolRef" type="SymbolRefType"/>
+            <xsd:element name="Image" type="xsd:string"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    
+    <xsd:complexType name="SymbolRefType">
+        <xsd:attribute name="idref" type="xsd:string" use="required"/>
+    </xsd:complexType>
+    
+    <xsd:complexType name="InterpretationsType">
+        <xsd:sequence>
+            <xsd:element name="Interpretation" type="InterpretationType" maxOccurs="unbounded"/>
+        </xsd:sequence>
+        <xsd:attribute name="id" type="xsd:string" use="required"/>
+    </xsd:complexType>
+    
+    <xsd:complexType name="InterpretationType">
+        <xsd:sequence>
+            <xsd:element name="SymbolRef" type="SymbolRefType"/>
+            <xsd:element name="Instruction" type="xsd:string"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+</xsd:schema>
