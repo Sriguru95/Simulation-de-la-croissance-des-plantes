@@ -1,13 +1,5 @@
 **Projet de XML : Les L-Systèmes**
 
-**Informations des Étudiant**
-- ****Nom**** : ELUMALAI
-- ****Prénom**** : Sriguru
-- ****Numéro étudiant**** : 22320777
-- ****Nom**** : MAMBILA TETE
-- ****Prénom**** : Jean-Philipp
-- ****Numéro étudiant**** : 22304110
-
 **Description du Projet**
 Ce projet vise à utiliser les L-Systèmes pour générer des dessins en utilisant des transformations XML. Le processus comprend l'extraction de données, la transformation via XSLT, et la génération de fichiers SVG.
 
@@ -66,4 +58,12 @@ Cela générera le fichier `output3.svg`.
 **Remarques**
 
    - Le script `csv_to_xml.c` doit être compilé et exécuter avant dexecuter les commandes suivantes.
-   - Assurez-vous que tous les fichiers XSLT (`turtle-script.xsl`, `tracer-script.xsl`, `convertToSVG.xsl`) sont présents dans le même répertoire que
+   - Assurez-vous que tous les fichiers XSLT (`turtle-script.xsl`, `tracer-script.xsl`, `convertToSVG.xsl`) sont présents dans le même répertoire.
+
+**Rendu final**
+
+![image](https://portfolio-elumalai.fr/images/xml1.png)
+
+![image](https://portfolio-elumalai.fr/images/xml2.png)
+
+![image](https://portfolio-elumalai.fr/images/xml3.png)
